@@ -5,9 +5,11 @@
 :root{
   --green:#0AE261;
 }
-
+* {
+    cursor: url("/static/cursor.cur") ,auto;
+}
 html,
-body {
+body{
   width: 100%;
   height: 100%;
   cursor: url(/static/cursor.cur) 0 0, auto
@@ -36,20 +38,19 @@ header {width: 100%; height: 90px; background: #fff; box-shadow: 0 4px 10px rgba
 .title a {display: block; width: 100%; height: 100%;}
 
 /*main section*/
-#coffee_img {margin-left: 100px; padding-left: 100px;}
+#coffee_img {margin-left: 200px; padding-left: 100px;}
 .main {width: 90%; height: 90%; margin-top: 30px; background-image: url(background.png); background-size: cover; background-position:center; background-repeat: no-repeat; z-index: 100; margin-left: 90px; position: absolute;}
-.main .ads {width: 1400px; margin: 10px auto; color: #333; margin-top: 50px;}
+.main .ads {position: relative; width: 1400px; margin: 10px auto; color: #333; margin-top: 50px;}
 .main .ads h2 {text-align: center; font-size: 40px; font-weight: bold; margin-bottom: 50px; }
 .main .ads h2 .colortext {color: #384C9F}
 .main .inner {width: 1400px; height: 400px;margin: 10px;  position: relative;}
-.main .inner .Coffee_ads {display: block; width: 653px; height: auto; }
+.main .inner .Coffee_ads {display: block; width: 653px; height: auto; position: relative }
 .main .inner .Coffee_ads h2{ position: absolute; top: 13%; left: 0; font-size: 50px; line-height: 1.3; color: #222; animation-name: titani_1;  animation-duration: 1s;}
 @keyframes titani_1 {
   0%{opacity: 0; top:0;}
   30%{opacity: 0; top:0;}
   100%{opacity: 1; top:13%;}
 }
-
 
 .main .inner .Coffee_ads p {position: absolute; left: 0; top:33%; font-size: 19px; line-height: 1.6;  animation-name: titani-p_1; animation-duration: 0.5s;}
 
@@ -58,8 +59,6 @@ header {width: 100%; height: 90px; background: #fff; box-shadow: 0 4px 10px rgba
     30%{opacity: 0; transform: scale(0);}
     100%{opacity: 1; transform: scale(1);}
 }
-
-.main .inner .Coffee_ads ul {float: right;}
 
 /*section.menu*/
 .menu {width: 1400px; margin: 0 auto; color: #333; visibility: hidden; position: absolute;}

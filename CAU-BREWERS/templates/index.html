@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>CAU-BREWERS</title>
-  <link rel="stylesheet" href="/static/style.css">
+<!--  <link rel="stylesheet" href="/static/style.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <script type="text/javascript" src="/static/cursor.js"></script>
 
 </head>
@@ -32,11 +33,9 @@
         <h2> <span class="colortext">Monthly Drinks</span></h2>
       <div class="inner">
         <div class="Coffee_ads">
-          <a href="#">
           <h2>Specials</h2> <br>
           <p>CAU BREWERS에서 준비한 <br>
           당신을 위한 이달의 특별한 음료.</p>
-          </a>
             <ul id="coffee_img">
                 <img src="/static/specials_1.png" alt="스페셜">
             </ul>
