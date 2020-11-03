@@ -17,23 +17,53 @@ function pay_add(obj) {
     modal.style.visibility = 'visible'
 }
 
-function pay_result() {
-    Swal.fire( {
-        title: '결제 되었습니다',
-        confirmButtonText: `확인`,
-        }).then((result) => {
-            document.getElementById('pay_info').visibility = "hidden"
-            location.href="/index.html"
-        })
+function check(obj) {
+    btn = document.getElementsByClassName('btn')
+    num = parseInt(obj.value)
+    console.log(parseInt(obj.value) < 2)
+    switch (num){
+        case 0 :
+            btn[0].style.backgroundColor = 'orange'
+            btn[1].style.backgroundColor = 'white'
+            break;
+        case 1 :
+            btn[1].style.backgroundColor = 'orange'
+            btn[0].style.backgroundColor = 'white'
+            break;
+        case 2 :
+            btn[2].style.backgroundColor = 'orange'
+            btn[3].style.backgroundColor = 'white'
+            btn[4].style.backgroundColor = 'white'
+            break;
+        case 3 :
+            btn[2].style.backgroundColor = 'white'
+            btn[3].style.backgroundColor = 'orange'
+            btn[4].style.backgroundColor = 'white'
+            break;
+        case 4 :
+            btn[2].style.backgroundColor = 'white'
+            btn[3].style.backgroundColor = 'white'
+            btn[4].style.backgroundColor = 'orange'
+            break;
+        case 5 :
+            btn[5].style.backgroundColor = 'orange'
+            btn[6].style.backgroundColor = 'white'
+            break;
+        case 6 :
+            btn[5].style.backgroundColor = 'white'
+            btn[6].style.backgroundColor = 'orange'
+            break;
 }
 
-function pay_result2() {
-    Swal.fire( {
-        title: '결제 되었습니다',
-        confirmButtonText: `확인`,
-        }).then((result) => {
-            location.href="/index.html"
-        })
+}
+
+function pay_result() {
+    let info = document.getElementById('pay_info2')
+    info.style.visibility = 'visible'
+}
+
+function finish() {
+     location.href="/index.html"
 }
 function cancel() {
     let modal = document.getElementById('pay_info')

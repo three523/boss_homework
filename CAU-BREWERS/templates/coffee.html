@@ -11,32 +11,31 @@
 </head>
 <body>
   <div class="wrap">
+      <div class="center2" id="pay_info2">
+          <div class="finish">
+                <p class="text">결제가 완료되었습니다</p>
+                <button class="btn-ok" onclick="finish()">확인</button>
+          </div>
+      </div>
     <div class="center" id="pay_info">
       <div class="payment_windows">
         <p class="info">온도</p>
         <div class="menu_list">
-          <!-- <div class="info">온도</div> -->
-          <button class="btn">Hot</button>
-          <button class="btn">Ice</button>
-          <!-- <div class="menu_link"></div>
-          <div class="menu_link"></div> -->
+          <button value="0" onclick="check(this)" class="btn">Hot</button>
+          <button value="1" onclick="check(this)" class="btn">Ice</button>
         </div>
         <p class="info">사이즈</p>
 
         <div class="menu_list">
-          <!-- <div class="info">사이즈</div> -->
-          <button class="btn">Small</button>
-          <button class="btn">Medium</button>
-          <button class="btn">Large</button>
-          <!-- <div class="menu_link"></div>
-          <div class="menu_link"></div> -->
+          <button value="2" onclick="check(this)" class="btn">Small</button>
+          <button value="3" onclick="check(this)" class="btn">Medium</button>
+          <button value="4" onclick="check(this)" class="btn">Large</button>
         </div>
         <p class="info">시럽</p>
 
         <div class="menu_list">
-          <!-- <div class="info">시럽</div> -->
-          <button class="btn">시럽추가</button>
-          <button class="btn">추가안함</button>
+          <button value="5" onclick="check(this)" class="btn">시럽추가</button>
+          <button value="6" onclick="check(this)" class="btn">추가안함</button>
 
         </div>
         <div class="result">

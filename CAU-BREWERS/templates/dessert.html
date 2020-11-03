@@ -10,6 +10,12 @@
 </head>
 <body>
   <div class="wrap">
+      <div class="center2" id="pay_info2">
+          <div class="finish">
+                <p class="text">결제가 완료되었습니다</p>
+                <button class="btn-ok" onclick="finish()">확인</button>
+          </div>
+      </div>
     
     <section class="coffee">
 
@@ -41,7 +47,7 @@
 
     <div class="result">
       <span class="pay_text" id="pay_text"></span>
-      <img onclick="pay_result2()" src="/static/pay.png" alt="">
+      <img onclick="pay_result()" src="/static/pay.png" alt="">
       <img id="cancel" onclick="cancel()" src="/static/cancel.png" alt="payment">
     </div>
   </div>
