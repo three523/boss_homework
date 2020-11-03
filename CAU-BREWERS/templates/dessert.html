@@ -3,48 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>CAU-BREWERS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/static/style.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <script src="js/cursor.js"></script>
+  <script src="/static/cursor.js"></script>
 
 </head>
 <body>
-  <div calss="wrap">
+  <div class="wrap">
     
     <section class="coffee">
 
       <h2>CAU BREWERS DESSERT<br> <span class="colortext">MENU</span>
-        <a href="/index.html"><img src="img/util_02.png" href="/index.html" alt="" class="home"></a></h2>
+        <a href="index.html"><img src="/static/util_02.png" alt="" class="home"></a></h2>
     <ul>
         <li>
             <a href="#" class="menu_link">
 
-                <p class="img"><img class="dessert"  onclick="pay_add(this)" src="img/d_1.png" alt="3000원"></p>
+                <p class="img"><img class="dessert"  onclick="pay_add(this)" src="/static/d_1.png" alt="3000원"></p>
             </a>
         </li>
         <li>
             <a href="#" class="menu_link">
 
-                <p class="img"><img class="dessert" onclick="pay_add(this)" src="img/d_2.png" alt="4000원"></p>
+                <p class="img"><img class="dessert" onclick="pay_add(this)" src="/static/d_2.png" alt="4000원"></p>
             </a>
         </li>
         <li>
             <a href="#" class="menu_link">
 
-                <p class="img"><img class="dessert" onclick="pay_add(this)" src="img/d_3.png" alt="4000원"></p>
+                <p class="img"><img class="dessert" onclick="pay_add(this)" src="/static/d_3.png" alt="4000원"></p>
             </a>
         </li>
-
-  </section>
+    </ul>
+    </section>
 
 <!-- 여기에 자바스크립트로 메뉴를 누를때 금액과 수량 기재 되도록 할 예정-->
 
     <div class="result">
       <span class="pay_text" id="pay_text"></span>
-      <img onclick="pay_result2()" src="img/pay.png" alt="">
-      <img id="cancel" onclick="cancel()" src="img/cancel.png" alt="payment">
+      <img onclick="pay_result2()" src="/static/pay.png" alt="">
+      <img id="cancel" onclick="cancel()" src="/static/cancel.png" alt="payment">
     </div>
-
+  </div>
 
 </body>
 </html>
