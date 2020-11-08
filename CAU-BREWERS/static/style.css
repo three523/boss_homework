@@ -12,8 +12,8 @@ html,
 body{
   width: 100%;
   height: 100%;
-  cursor: url(/static/cursor.cur) 0 0, auto
-}
+  cursor: url(/static/cursor.cur) 0 0, auto;
+  overflow: hidden}
 .hand:active {
   cursor: url(/static/cursor.cur) ,auto;
 }
@@ -52,7 +52,7 @@ header {width: 100%; height: 90px; background: #fff; box-shadow: 0 4px 10px rgba
   100%{opacity: 1; top:13%;}
 }
 
-.main .inner .Coffee_ads p {position: absolute; left: 0; top:33%; font-size: 19px; line-height: 1.6;  animation-name: titani-p_1; animation-duration: 0.5s;}
+.main .inner .Coffee_ads p {position: absolute; left: 0; top:33%; font-size: 19px; line-height: 1.6;  animation-name: titani-p_1; animation-duration: 0.5s; scroll: "no";}
 
 @keyframes titani-p_1 {
     0%{opacity: 0;  transform: scale(0);}
