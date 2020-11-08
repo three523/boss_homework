@@ -14,7 +14,9 @@ function pay_add(obj) {
     let pay_text = document.getElementById('pay_text')
     let re_text = obj.getAttribute('alt')
     pay_text.textContent = re_text
-    modal.style.visibility = 'visible'
+    if (modal !== null) {
+        modal.style.visibility = 'visible'
+    }
 }
 
 function check(obj) {
